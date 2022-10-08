@@ -3,7 +3,7 @@ Um desafio proposto pela plataforma de ensino  <a href="https://app.rocketseat.c
 <hr>
 <h2><a href="https://www.instagram.com/p/Ch3EOQ0p2sZ/?igshid=YmMyMTA2M2Y=">Primeiro nivel</a></h2>
 
-- Construa um repositorio para listar os projetos.
+- Construa um repositorio para listar os projetos. 🆗
 - Faça um Hello World customizado com fontes e imagens.
 - Crie um botão animado.
 - Crie uma calculadora.
