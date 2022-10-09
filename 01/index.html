@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+        *{
+            font-family: 'Berkshire Swash', cursive;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient( rgb(83, 83, 83), #272727);
+        }
+        img{
+            width: 300px;
+            height: auto;
+            object-fit: contain;
+        }
+        img:hover{
+            filter: drop-shadow(10px 10px 10px rgba(255, 234, 1, 0.848));
+        }
+        h1{
+            text-align:center;
+            font-size: 8rem;
+            background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(255, 26, 26));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(2px 2px 4px rgba(195, 186, 186, 0.848));
+        }
+        h1 span{
+            padding: 1rem;
+            background: -webkit-linear-gradient(rgb(255, 0, 0), rgb(0, 0, 0));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p{
+            font-size: 1.5rem;
+            color: red;
+        }
+        .Show{
+            display: block;
+        }
+        .Hide{
+            display: none;
+        }
+    </style>
+    <title>Desafio 1</title>
+</head>
+<body>
+    <img id="crown" src="https://www.pngall.com/wp-content/uploads/1/Crown-Free-PNG-Image.png">
+    <h1><span>H</span>ello <span>W</span>orld!</h1>
+    <p id="paragraf">Hail to the king</p>
+</body>
+<script>
+    const crown = document.getElementById('crown');
+    const paragraf = document.getElementById('paragraf');
+    crown.addEventListener("mouseover", function(e){
+        paragraf.classList.remove("Hide");
+        paragraf.classList.add("Show");
+    });
+
+    crown.addEventListener("mouseout", function(e){
+        paragraf.classList.remove("Show");
+        paragraf.classList.add("Hide");
+    });
+</script>
+</html>
